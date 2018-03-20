@@ -1,0 +1,13 @@
+<h1>Memory ({{time}} s)</h1>
+
+<div id="timerConterner"  ng-controller="timerElement">
+	<div game-Countdown=""></div>
+</div>
+
+<div class="gameCont">
+	<div ng-repeat="i in emptyTab track by $index" class="oneGameItem">
+		<img id="image_{{$index}}" ng-click="openImage($index, $event)" class="gameImages" ng-src="{{i}}">
+	</div>
+</div>
+
+<div ng-controller="timerElement" game-Alert=""></div>
